@@ -1,0 +1,7 @@
+{
+  "name": "Publish storybook to github pages",
+  "description": "For showcasing / documentation of react component libraries. The project must have storybook installed and configured to work properly. Expects the repository to have an npm script with the name \"build-storybook\"",
+  "iconName": "js",
+  "categories": ["JavaScript", "TypeScript"],
+  "filePatterns": [".storybook"]
+}
