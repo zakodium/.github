@@ -1,0 +1,7 @@
+{
+  "name": "Release a GitHub action",
+  "description": "Run release-please to automatically open release pull requests and publish releases to GitHub",
+  "iconName": "js",
+  "categories": ["JavaScript", "TypeScript"],
+  "filePatterns": ["package.json$"]
+}
