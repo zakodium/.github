@@ -6,7 +6,7 @@ on:
       - $default-branch
 
 env:
-  NODE_VERSION: 16.x
+  NODE_VERSION: 18.x
 
 jobs:
   release-please:
@@ -14,7 +14,7 @@ jobs:
     steps:
       - name: Get package name
         run: echo "PACKAGE_NAME=$(jq .name package.json | tr -d '"')" >> $GITHUB_ENV
-      - uses: GoogleCloudPlatform/release-please-action@v2
+      - uses: google-github-actions/release-please-action@v3
         id: release
         with:
           token: ${{ secrets.BOT_TOKEN }}
